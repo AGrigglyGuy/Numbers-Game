@@ -38,12 +38,14 @@ class Program
                 Console.WriteLine("Nice Try, but that's a little low...");
                 Console.WriteLine($"You have {10 - attempts} attempts left.");
                 attempts++;
+                continue;
             }
             else if (userInput > randomNumber)
             {
                 Console.WriteLine("Ummm... that's a bit high!");
                 Console.WriteLine($"You have {10 - attempts} attempts left.");
                 attempts++;
+                continue;
             }
             else
             {
